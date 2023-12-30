@@ -1,0 +1,22 @@
+[package]
+name = "soban"
+version.workspace = true
+edition.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+soban-macros = { path = "../soban-macros" }
+dotenvy = "0.15.7"
+eyre = "0.6.8"
+futures = "0.3.28"
+irc = "0.15.0"
+matrix-sdk = "0.6.2"
+reqwest = "0.11.22"
+rosu-v2 = "0.8.0"
+rosu-pp = "0.9.5"
+tokio = { version = "1.32.0", features = ["full"] }
+linkme = { version = "0.3.15" }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+time = "0.3.29"
